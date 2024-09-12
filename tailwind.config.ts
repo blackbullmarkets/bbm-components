@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     fontSize: {
       xm: "0.75em" /* 12px */,
-      sm: "0.875" /* 14px */,
+      sm: "0.875em" /* 14px */,
       base: "1em" /* 16px */,
       md: "1.125em" /* 18px */,
       lg: "1.5em" /* 24px */,
@@ -20,15 +20,13 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        "primary-blue": {
+        primary: {
           default: "#0064FF",
         },
-        "secondary-blue": { default: "#003992" },
-        "support-blue": { default: "#002764" },
+        secondary: { default: "#003992" },
+        support: { default: "#002764" },
         success: { default: "#44df3d" },
-        info: { default: "0064ff" },
+        info: { default: "#0064ff" },
         warning: { default: "#ffd600" },
         danger: { default: "#ff3e24" },
       },
