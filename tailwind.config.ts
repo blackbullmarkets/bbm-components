@@ -31,6 +31,12 @@ const config: Config = {
         warning: { default: "#ffd600", 75: "rgba(255, 214, 0, 0.75)" },
         danger: { default: "#ff3e24", 75: "rgba(255, 62, 36, 0.75)" },
         light: { default: "rgba(0, 100, 255, 0.25)" },
+        black: {
+          default: "#000",
+          75: "rgba(0, 0, 0, 0.75)",
+          50: "rgba(0, 0, 0, 0.50)",
+          25: "rgba(0, 0, 0, 0.25)",
+        },
       },
       dropShadow: {
         xm: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",

@@ -12,7 +12,8 @@ interface Props {
     | "success"
     | "info"
     | "warning"
-    | "danger";
+    | "danger"
+    | "inactive";
   size: string | "sm" | "base" | "lg";
   bold: boolean;
 }
@@ -51,6 +52,10 @@ export default function LinkButton({
     case "light":
       buttonColor =
         "bg-light-default border text-primary-default hover:border-primary-default";
+      break;
+    case "inactive":
+      buttonColor =
+        "bg-black-25 text-black-75 pointer-events-none cursor-not-allowed";
       break;
   }
   switch (size) {
