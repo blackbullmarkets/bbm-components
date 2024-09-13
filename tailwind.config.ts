@@ -22,13 +22,15 @@ const config: Config = {
       colors: {
         primary: {
           default: "#0064FF",
+          dark: "#0C2AE8",
         },
-        secondary: { default: "#003992" },
-        support: { default: "#002764" },
-        success: { default: "#44df3d" },
-        info: { default: "#0064ff" },
-        warning: { default: "#ffd600" },
-        danger: { default: "#ff3e24" },
+        secondary: { default: "#003992", 75: "rgba(0, 57, 146, 0.75)" },
+        support: { default: "#002764", 75: "rgba(0, 39, 100, 0.75)" },
+        success: { default: "#44df3d", dark: "#13C640" },
+        info: { default: "#0064ff", 75: "rgba(0, 100, 255, 0.75)" },
+        warning: { default: "#ffd600", 75: "rgba(255, 214, 0, 0.75)" },
+        danger: { default: "#ff3e24", 75: "rgba(255, 62, 36, 0.75)" },
+        light: { default: "rgba(0, 100, 255, 0.25)" },
       },
       dropShadow: {
         xm: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",

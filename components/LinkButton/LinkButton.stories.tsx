@@ -14,6 +14,7 @@ const meta: Meta<typeof LinkButton> = {
         "info",
         "warning",
         "danger",
+        "light",
       ],
     },
     size: {

@@ -7,6 +7,7 @@ interface Props {
     | string
     | "primary"
     | "secondary"
+    | "light"
     | "support"
     | "success"
     | "info"
@@ -27,25 +28,29 @@ export default function LinkButton({
   let sizeVariant = "";
   switch (variant) {
     case "primary":
-      buttonColor = "bg-primary-default text-white";
+      buttonColor = "bg-primary-default text-white hover:bg-primary-dark";
       break;
     case "secondary":
-      buttonColor = "bg-secondary-default text-white";
+      buttonColor = "bg-secondary-default text-white hover:bg-secondary-75";
       break;
     case "support":
-      buttonColor = "bg-support-default text-white";
+      buttonColor = "bg-support-default text-white hover:bg-support-75";
       break;
     case "success":
-      buttonColor = "bg-success-default text-white";
+      buttonColor = "bg-success-dark text-white hover:bg-success-default";
       break;
     case "info":
-      buttonColor = "bg-info-default text-white";
+      buttonColor = "bg-info-default text-white hover:bg-info-75";
       break;
     case "warning":
-      buttonColor = "bg-warning-default text-white";
+      buttonColor = "bg-warning-default text-white hover:bg-warning-75";
       break;
     case "danger":
-      buttonColor = "bg-danger-default text-white";
+      buttonColor = "bg-danger-default text-white hover:bg-danger-75";
+      break;
+    case "light":
+      buttonColor =
+        "bg-light-default border text-primary-default hover:border-primary-default";
       break;
   }
   switch (size) {
