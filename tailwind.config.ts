@@ -37,6 +37,7 @@ const config: Config = {
           50: "rgba(0, 0, 0, 0.50)",
           25: "rgba(0, 0, 0, 0.25)",
         },
+        labelgray: "#808191",
       },
       dropShadow: {
         xm: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
