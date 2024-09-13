@@ -16,7 +16,7 @@ const config: Config = {
       xl: "2em" /* 32px */,
       xxl: "3em" /* 48px */,
       xxxl: "4em" /* 64px */,
-      max: "5.9375em" /* 95px */,
+      max: "6em" /* 96px */,
     },
     extend: {
       colors: {
