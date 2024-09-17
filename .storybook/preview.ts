@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "../app/globals.css";
+import "material-symbols";
 
 const preview: Preview = {
   parameters: {
