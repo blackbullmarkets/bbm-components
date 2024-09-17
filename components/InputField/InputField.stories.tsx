@@ -37,6 +37,9 @@ export const Common: Story = {
     fieldID: "email",
     label: "Email",
     validatingText: "We're validating your data...",
+    isValidating: true,
     errorText: "Something went wrong. Try again...",
+    isError: true,
+    placeholder: "name@example.com",
   },
 };

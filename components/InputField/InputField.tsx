@@ -3,7 +3,9 @@ interface InputProps {
   label: string;
   placeholder: string;
   validatingText: string;
+  isValidating: boolean;
   errorText: string;
+  isError: boolean;
 }
 
 export default function InputField({
@@ -11,7 +13,9 @@ export default function InputField({
   label,
   placeholder,
   validatingText,
+  isValidating,
   errorText,
+  isError,
 }: InputProps) {
   return (
     <div>
@@ -25,24 +29,28 @@ export default function InputField({
           id={fieldID}
         />
       </label>
-      <div className="text-primary-default mt-3 flex items-center">
-        <span
-          className="material-symbols-outlined mr-1 animate-spin"
-          style={{ fontSize: "1.125em" }}
-        >
-          progress_activity
-        </span>
-        <p className="text-sm font-light">{validatingText}</p>
-      </div>
-      <div className="text-danger-default mt-3 flex items-center">
-        <span
-          className="material-symbols-outlined mr-1"
-          style={{ fontSize: "1.125em" }}
-        >
-          block
-        </span>
-        <p className="text-sm font-light">{errorText}</p>
-      </div>
+      {isValidating && (
+        <div className="text-primary-default mt-3 flex items-center">
+          <span
+            className="material-symbols-outlined animate-spin"
+            style={{ fontSize: "1.125em" }}
+          >
+            progress_activity
+          </span>
+          <p className="text-sm font-light ml-1">{validatingText}</p>
+        </div>
+      )}
+      {isError && (
+        <div className="text-danger-default mt-3 flex items-center">
+          <span
+            className="material-symbols-outlined"
+            style={{ fontSize: "1.125em" }}
+          >
+            block
+          </span>
+          <p className="text-sm font-light ml-1">{errorText}</p>
+        </div>
+      )}
     </div>
   );
 }
