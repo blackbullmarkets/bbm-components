@@ -39,14 +39,14 @@ const config: Config = {
         },
         labelgray: "#808191",
       },
-      dropShadow: {
+      boxShadow: {
         xm: "0px 1px 2px rgba(16, 24, 40, 0.05)",
         sm: "0px 1px 3px rgba(16, 24, 40, 0.10)",
         base: "0px 4px 8px rgba(16, 24, 40, 0.10)",
         lg: "0px 20px 24px rgba(16, 24, 40, 0.10)",
         xl: "0px 24px 48px rgba(16, 24, 40, 0.25)",
       },
-      boxShadow: {
+      dropShadow: {
         xm: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
         sm: "0px 1px 3px 0px rgba(16, 24, 40, 0.10)",
         base: "0px 4px 8px -2px rgba(16, 24, 40, 0.10)",
