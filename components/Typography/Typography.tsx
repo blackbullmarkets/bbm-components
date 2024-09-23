@@ -79,6 +79,10 @@ export default function Typography({ variant, children, color }: TypoProps) {
       textStyle = "text-md";
       Tag = "p";
       break;
+    case "caption":
+      textStyle = "text-xm";
+      Tag = "p";
+      break;
   }
   return <Tag className={`${textStyle} ${color}`}>{children}</Tag>;
 }
