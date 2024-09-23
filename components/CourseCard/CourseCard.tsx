@@ -23,7 +23,7 @@ export default function CourseCard({
 }: CourseCardProps) {
   return (
     <div className="w-1/3 shadow-base p-8 flex flex-col gap-3">
-      <StarLevel level={level} />
+      <StarLevel level={level} variant="vertical" />
       <Image
         src={featuredImage}
         width={360}

@@ -42,6 +42,9 @@ type Story = StoryObj<typeof CourseCard>;
 
 export const Common: Story = {
   name: "Common",
+  parameters: {
+    layout: "centered",
+  },
   args: {
     level: 2,
     courseTitle: "Candlestick Patters",
