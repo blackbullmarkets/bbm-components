@@ -29,33 +29,39 @@ export default function LinkButton({
   let sizeVariant = "";
   switch (variant) {
     case "primary":
-      buttonColor = "bg-primary-default text-white hover:bg-primary-dark";
+      buttonColor =
+        "bg-primary-default text-white hover:bg-primary-dark inline-block";
       break;
     case "secondary":
-      buttonColor = "bg-secondary-default text-white hover:bg-secondary-75";
+      buttonColor =
+        "bg-secondary-default text-white hover:bg-secondary-75 inline-block";
       break;
     case "support":
-      buttonColor = "bg-support-default text-white hover:bg-support-75";
+      buttonColor =
+        "bg-support-default text-white hover:bg-support-75 inline-block";
       break;
     case "success":
-      buttonColor = "bg-success-dark text-white hover:bg-success-default";
+      buttonColor =
+        "bg-success-dark text-white hover:bg-success-default inline-block";
       break;
     case "info":
-      buttonColor = "bg-info-default text-white hover:bg-info-75";
+      buttonColor = "bg-info-default text-white hover:bg-info-75 inline-block";
       break;
     case "warning":
-      buttonColor = "bg-warning-default text-white hover:bg-warning-75";
+      buttonColor =
+        "bg-warning-default text-white hover:bg-warning-75 inline-block";
       break;
     case "danger":
-      buttonColor = "bg-danger-default text-white hover:bg-danger-75";
+      buttonColor =
+        "bg-danger-default text-white hover:bg-danger-75 inline-block";
       break;
     case "light":
       buttonColor =
-        "bg-light-default border text-primary-default hover:border-primary-default";
+        "bg-light-default border text-primary-default hover:border-primary-default inline-block";
       break;
     case "inactive":
       buttonColor =
-        "bg-black-25 text-black-75 pointer-events-none cursor-not-allowed";
+        "bg-black-25 text-black-75 pointer-events-none cursor-not-allowed inline-block";
       break;
   }
   switch (size) {
