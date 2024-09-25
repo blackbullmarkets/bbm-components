@@ -34,10 +34,11 @@ const config: Config = {
         black: {
           default: "#000",
           75: "rgba(0, 0, 0, 0.75)",
-          50: "rgba(0, 0, 0, 0.50)",
+          50: "#7f7f7f",
           25: "rgba(0, 0, 0, 0.25)",
         },
         labelgray: "#808191",
+        lightgray: "#EFEFEF",
       },
       boxShadow: {
         xm: "0px 1px 2px rgba(16, 24, 40, 0.05)",
