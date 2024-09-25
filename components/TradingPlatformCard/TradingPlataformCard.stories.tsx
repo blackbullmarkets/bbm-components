@@ -3,6 +3,7 @@ import TradingPlatformCard from "./TradingPlatformCard";
 
 const meta: Meta<typeof TradingPlatformCard> = {
   component: TradingPlatformCard,
+  title: "Cards/Trading Platform Card",
   argTypes: {
     title: {
       control: "text",
@@ -32,7 +33,7 @@ export default meta;
 type Story = StoryObj<typeof TradingPlatformCard>;
 
 export const Common: Story = {
-  name: "Common",
+  name: "Trading Platform Basic Card",
   args: {
     title: "TradingView",
     content:
