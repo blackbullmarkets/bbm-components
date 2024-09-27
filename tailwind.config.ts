@@ -63,6 +63,9 @@ const config: Config = {
         xl: "70px",
       },
     },
+    screens: {
+      lg: "1280px",
+    },
   },
   plugins: [],
 };
