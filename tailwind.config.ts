@@ -26,10 +26,14 @@ const config: Config = {
         },
         secondary: { default: "#003992", 75: "rgba(0, 57, 146, 0.75)" },
         support: { default: "#002764", 75: "rgba(0, 39, 100, 0.75)" },
-        success: { default: "#44df3d", dark: "#13C640" },
+        success: { default: "#44df3d", dark: "#13C640", light: "#BCE8C7" },
         info: { default: "#0064ff", 75: "rgba(0, 100, 255, 0.75)" },
         warning: { default: "#ffd600", 75: "rgba(255, 214, 0, 0.75)" },
-        danger: { default: "#ff3e24", 75: "rgba(255, 62, 36, 0.75)" },
+        danger: {
+          default: "#ff3e24",
+          75: "rgba(255, 62, 36, 0.75)",
+          light: "#F9DEDC",
+        },
         light: { default: "rgba(0, 100, 255, 0.25)" },
         black: {
           default: "#000",
