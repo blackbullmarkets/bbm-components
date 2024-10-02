@@ -40,19 +40,21 @@ export default meta;
 
 type Story = StoryObj<typeof CourseCard>;
 
+const storyArgs = {
+  level: 2,
+  courseTitle: "Candlestick Patters",
+  featuredImage: "/images/course_thumbnail.png",
+  excerpt:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  lessonNumber: 1,
+  lessonTotal: 5,
+  lessonDuration: 4,
+};
+
 export const Common: Story = {
   name: "Common",
   parameters: {
     layout: "centered",
   },
-  args: {
-    level: 2,
-    courseTitle: "Candlestick Patters",
-    featuredImage: "/images/course_thumbnail.png",
-    excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    lessonNumber: 1,
-    lessonTotal: 5,
-    lessonDuration: 4,
-  },
+  args: storyArgs,
 };

@@ -1,4 +1,5 @@
 interface Props {
+  id: string;
   label: string;
   variant:
     | string
@@ -13,13 +14,16 @@ interface Props {
     | "inactive";
   size: "sm" | "base" | "lg";
   bold: boolean;
+  onClickFn: any;
 }
 
 export default function Button({
+  id = "button",
   variant = "primary",
   size = "base",
   label = "Link",
   bold = true,
+  onClickFn = null,
 }: Props) {
   let buttonColor = "";
   let sizeVariant = "";
@@ -74,10 +78,12 @@ export default function Button({
 
   return (
     <button
+      id={id}
       type="button"
       className={`${buttonColor} ${sizeVariant} ${
         bold && "font-semibold"
       } text-sm rounded-xm`}
+      onClick={onClickFn}
     >
       {label}
     </button>
