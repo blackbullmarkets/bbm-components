@@ -3,6 +3,7 @@ import CourseCard from "./CourseCard";
 
 const meta: Meta<typeof CourseCard> = {
   component: CourseCard,
+  title: "Cards/Course Card",
   argTypes: {
     level: {
       control: "number",
@@ -43,6 +44,7 @@ type Story = StoryObj<typeof CourseCard>;
 const storyArgs = {
   level: 2,
   courseTitle: "Candlestick Patters",
+  courseLink: "https://blackbull.com",
   featuredImage: "/images/course_thumbnail.png",
   excerpt:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",

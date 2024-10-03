@@ -1,6 +1,6 @@
 import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import QuizOption from "../QuizOption/QuizOption";
 
 interface QuizAnswer {
