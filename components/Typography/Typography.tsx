@@ -11,6 +11,7 @@ interface TypoProps {
     | "subheading-md"
     | "subheading-sm"
     | "body-lg"
+    | "body-sm"
     | "body"
     | "caption";
   children: React.ReactNode | string;
@@ -77,6 +78,10 @@ export default function Typography({ variant, children, color }: TypoProps) {
       break;
     case "body-lg":
       textStyle = "text-md";
+      Tag = "p";
+      break;
+    case "body-sm":
+      textStyle = "text-sm";
       Tag = "p";
       break;
     case "caption":

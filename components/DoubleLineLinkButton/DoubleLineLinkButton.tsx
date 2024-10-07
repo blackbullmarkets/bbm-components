@@ -18,20 +18,20 @@ export default function DoubleLineLinkButton({
   return (
     <a
       href={href}
-      className="bg-success-dark inline-block flex flex-row py-4 px-8 rounded-xm items-center gap-2.5"
+      className="bg-success-dark inline-block flex flex-row py-4 px-8 rounded-xm items-center gap-2.5 hover:bg-success-default"
     >
       <span
-        class="material-symbols-outlined"
+        className="material-symbols-outlined"
         style={{ fontSize: "1.5em", color: "#fff" }}
       >
-        play_circle
+        {icon}
       </span>
       <div>
-        <Typography variant="body" color="text-white">
-          Next Lesson
+        <Typography variant="body-sm" color="text-white">
+          <strong>{firstLine}</strong>
         </Typography>
-        <Typography variant="body" color="text-white">
-          How do you trade Forex?
+        <Typography variant="body-sm" color="text-white">
+          {secondLine}
         </Typography>
       </div>
     </a>
