@@ -1,3 +1,5 @@
+"use client";
+
 import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
 import { useState } from "react";
@@ -12,9 +14,18 @@ interface QuizAnswer {
 interface QuizProps {
   quizQuestion: string;
   options: QuizAnswer[];
+  nextButtonFn: any;
 }
 
-export default function QuizBlock({ quizQuestion, options }: QuizProps) {
+function defaultFn() {
+  alert("blackbull!");
+}
+
+export default function QuizBlock({
+  quizQuestion,
+  options,
+  nextButtonFn = defaultFn,
+}: QuizProps) {
   const [buttonState, setButtonState] = useState("inactive");
   const [answers, setAnswers] = useState(options);
   const [showNext, setShowNext] = useState(false);
@@ -72,7 +83,7 @@ export default function QuizBlock({ quizQuestion, options }: QuizProps) {
             variant="success"
             label="Next"
             size="lg"
-            onClickFn={null}
+            onClickFn={nextButtonFn}
             bold
           />
         )}
