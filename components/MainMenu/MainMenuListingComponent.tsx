@@ -3,7 +3,7 @@ import Link from "next/link";
 interface ChildItem {
   ID: number;
   menu_item_parent: string;
-  post_title: string;
+  title: string;
   url: string;
 }
 
@@ -22,7 +22,7 @@ export default function TopMenuComponent({ parentMenuItems }: Props) {
         parentMenuItems.map((item: MenuItem) => (
           <li key={item.ID} className="group float-left p-2 overflow-visible">
             <Link href={`/${item.url}`} className="font-bold text-base">
-              {item.post_title}
+              {item.title}
               {item.childItems.length > 0 && (
                 <span className="material-symbols-outlined align-bottom">
                   keyboard_arrow_down
@@ -37,7 +37,7 @@ export default function TopMenuComponent({ parentMenuItems }: Props) {
                     key={child.ID}
                     className="px-4 py-2 bg-white hover:bg-gray-200 text-gray-400 hover:text-black"
                   >
-                    <Link href={`/${child.url}`}>{child.post_title}</Link>
+                    <Link href={`/${child.url}`}>{child.title}</Link>
                   </li>
                 ))}
             </ul>
