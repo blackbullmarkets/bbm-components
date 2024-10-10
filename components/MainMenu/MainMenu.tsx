@@ -4,7 +4,7 @@ import MainMenuListingComponent from "./MainMenuListingComponent";
 interface ChildItem {
   ID: number;
   menu_item_parent: string;
-  post_title: string;
+  title: string;
   url: string;
 }
 
