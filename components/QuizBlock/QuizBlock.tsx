@@ -14,7 +14,7 @@ interface QuizAnswer {
 interface QuizProps {
   quizQuestion: string;
   options: QuizAnswer[];
-  nextButtonFn: any;
+  nextButtonFn: () => void;
 }
 
 function defaultFn() {
@@ -40,7 +40,7 @@ export default function QuizBlock({
   }
   function submitAnswer() {
     const newAnswers = [...options];
-    newAnswers.map((ans, index) => {
+    newAnswers.map((ans) => {
       if (ans.variant === "selected") {
         if (ans.isRightAnswer) {
           ans.variant = "success";
@@ -62,6 +62,7 @@ export default function QuizBlock({
         {answers &&
           answers.map((answer, i) => (
             <QuizOption
+              key={i}
               onClickFn={() => selectAnswer(i)}
               variant={answer.variant}
               answer={answer.answer}
@@ -91,7 +92,7 @@ export default function QuizBlock({
       <ul>
         {options &&
           options.map((option, i) => (
-            <li>{option.selected && option.answer}</li>
+            <li key={i}>{option.selected && option.answer}</li>
           ))}
       </ul>
     </div>

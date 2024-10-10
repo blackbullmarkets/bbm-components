@@ -1,10 +1,21 @@
 import Link from "next/link";
 import MainMenuListingComponent from "./MainMenuListingComponent";
 
+interface ChildItem {
+  ID: number;
+  menu_item_parent: string;
+  post_title: string;
+  url: string;
+}
+
+type MenuItem = ChildItem & {
+  childItems: ChildItem[];
+};
+
 interface MainMenuProps {
   logo: React.ReactNode;
   homepageUrl: string;
-  menuItems: any[];
+  menuItems: MenuItem[];
 }
 
 export default function MainMenu({

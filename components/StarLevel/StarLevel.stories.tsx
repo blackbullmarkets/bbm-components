@@ -21,7 +21,6 @@ export default meta;
 type Story = StoryObj<typeof StarLevel>;
 
 export const Common: Story = {
-  name: "Common",
   parameters: {
     layout: "centered",
   },

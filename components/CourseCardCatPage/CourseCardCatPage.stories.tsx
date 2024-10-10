@@ -25,7 +25,6 @@ export default meta;
 type Story = StoryObj<typeof CourseCardCatPage>;
 
 export const Common: Story = {
-  name: "Common",
   parameters: {
     layout: "centered",
   },

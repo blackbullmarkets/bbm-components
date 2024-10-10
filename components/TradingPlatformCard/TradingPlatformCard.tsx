@@ -12,7 +12,6 @@ interface TradingPlatformCardProps {
 
 export default function TradingPlatformCard({
   title,
-  content,
   link_to,
   icon,
   excerpt,

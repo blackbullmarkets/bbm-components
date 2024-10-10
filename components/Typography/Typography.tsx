@@ -29,7 +29,7 @@ interface TypoProps {
 }
 
 export default function Typography({ variant, children, color }: TypoProps) {
-  let Tag = "";
+  let Tag = "" as keyof JSX.IntrinsicElements;
   let textStyle = "";
   switch (variant) {
     case "headline":

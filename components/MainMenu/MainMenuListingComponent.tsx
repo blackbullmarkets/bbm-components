@@ -8,7 +8,7 @@ interface ChildItem {
 }
 
 type MenuItem = ChildItem & {
-  childItems: any[];
+  childItems: ChildItem[];
 };
 
 interface Props {

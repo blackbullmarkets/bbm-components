@@ -7,6 +7,7 @@ export interface CourseCardProps {
   lessonNumber: number;
   lessonTotal: number;
   lessonDuration: number;
+  ID: string;
 }
 
 export interface LessonListing {

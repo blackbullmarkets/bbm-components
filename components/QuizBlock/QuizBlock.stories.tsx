@@ -50,6 +50,5 @@ const args = {
 };
 
 export const Common: Story = {
-  name: "Common",
   args,
 };

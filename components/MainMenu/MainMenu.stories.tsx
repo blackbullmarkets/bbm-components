@@ -24,7 +24,6 @@ export default meta;
 type Story = StoryObj<typeof MainMenu>;
 
 export const Common: Story = {
-  name: "Common",
   args: {
     homepageUrl: "http://blackbull.com",
     logo: "omg!",
