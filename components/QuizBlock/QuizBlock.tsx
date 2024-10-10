@@ -4,6 +4,7 @@ import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
 import { useState } from "react";
 import QuizOption from "../QuizOption/QuizOption";
+import LinkButton from "@/components/LinkButton/LinkButton";
 
 interface QuizAnswer {
   answer: string;
@@ -14,17 +15,25 @@ interface QuizAnswer {
 interface QuizProps {
   quizQuestion: string;
   options: QuizAnswer[];
-  nextButtonFn: () => void;
+  nextButton: React.ReactNode;
 }
 
-function defaultFn() {
-  alert("blackbull!");
+function DefaultBtn() {
+  return (
+    <LinkButton
+      href="http://blackbull.com"
+      variant="success"
+      size="lg"
+      label="Next Lesson"
+      bold
+    />
+  );
 }
 
 export default function QuizBlock({
   quizQuestion,
   options,
-  nextButtonFn = defaultFn,
+  nextButton = <DefaultBtn />,
 }: QuizProps) {
   const [buttonState, setButtonState] = useState("inactive");
   const [answers, setAnswers] = useState(options);
@@ -78,16 +87,7 @@ export default function QuizBlock({
           onClickFn={submitAnswer}
           bold
         />
-        {showNext && (
-          <Button
-            id="nextButton"
-            variant="success"
-            label="Next"
-            size="lg"
-            onClickFn={nextButtonFn}
-            bold
-          />
-        )}
+        {showNext && nextButton}
       </div>
       <ul>
         {options &&
