@@ -4,7 +4,6 @@ import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
 import { useState } from "react";
 import QuizOption from "../QuizOption/QuizOption";
-import LinkButton from "../LinkButton/LinkButton";
 
 interface QuizAnswer {
   answer: string;
@@ -21,15 +20,7 @@ interface QuizProps {
 export default function QuizBlock({
   quizQuestion,
   options,
-  nextButton = (
-    <LinkButton
-      href="http://blackbull.com"
-      variant="success"
-      size="lg"
-      label="Next Lesson"
-      bold
-    />
-  ),
+  nextButton,
 }: QuizProps) {
   const [buttonState, setButtonState] = useState("inactive");
   const [answers, setAnswers] = useState(options);
