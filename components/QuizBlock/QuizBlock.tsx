@@ -4,7 +4,7 @@ import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
 import { useState } from "react";
 import QuizOption from "../QuizOption/QuizOption";
-import LinkButton from "../../components/LinkButton/LinkButton";
+import LinkButton from "../LinkButton/LinkButton";
 
 interface QuizAnswer {
   answer: string;
