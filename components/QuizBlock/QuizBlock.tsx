@@ -18,8 +18,10 @@ interface QuizProps {
   nextButton: React.ReactNode;
 }
 
-function DefaultBtn() {
-  return (
+export default function QuizBlock({
+  quizQuestion,
+  options,
+  nextButton = (
     <LinkButton
       href="http://blackbull.com"
       variant="success"
@@ -27,13 +29,7 @@ function DefaultBtn() {
       label="Next Lesson"
       bold
     />
-  );
-}
-
-export default function QuizBlock({
-  quizQuestion,
-  options,
-  nextButton = <DefaultBtn />,
+  ),
 }: QuizProps) {
   const [buttonState, setButtonState] = useState("inactive");
   const [answers, setAnswers] = useState(options);
