@@ -17,7 +17,7 @@ export default function TradingPlatformCard({
   excerpt,
 }: TradingPlatformCardProps) {
   return (
-    <div className="w-1/3 p-8 bg-white rounded-sm flex flex-col justify-start items-start border-2 border-primary-default rounded-xm gap-5">
+    <div className="p-8 bg-white rounded-sm flex flex-col justify-start items-start border-2 border-primary-default rounded-xm gap-5">
       <div className="flex gap-2 items-center mb-2">
         <Image
           src={`/platform_icons/${icon}.svg`}
