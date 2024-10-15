@@ -43,9 +43,7 @@ export default function ContentBlock({
         <Typography variant="h3" color="text-primary-default">
           {heading}
         </Typography>
-        <Typography variant="body" color="text-black-50">
-          <div dangerouslySetInnerHTML={{ __html: content }}></div>
-        </Typography>
+        <div className="text-base text-black-50">{content}</div>
       </div>
     </section>
   );
