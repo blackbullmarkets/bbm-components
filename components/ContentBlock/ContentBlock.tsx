@@ -44,7 +44,7 @@ export default function ContentBlock({
           {heading}
         </Typography>
         <Typography variant="body" color="text-black-50">
-          {content}
+          <span dangerouslySetInnerHTML={{ __html: content }}></span>
         </Typography>
       </div>
     </section>

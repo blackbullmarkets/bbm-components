@@ -42,7 +42,7 @@ export default function HeroSection({
             {heading}
           </Typography>
           <Typography variant="body-lg" color="text-black-50">
-            {subheading}
+            <span dangerouslySetInnerHTML={{ __html: subheading }}></span>
           </Typography>
           {hasButtonLink && (
             <LinkButton
