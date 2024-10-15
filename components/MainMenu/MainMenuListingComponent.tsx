@@ -2,7 +2,6 @@ import Link from "next/link";
 
 interface ChildItem {
   ID: number;
-  menu_item_parent: string;
   title: string;
   url: string;
 }
