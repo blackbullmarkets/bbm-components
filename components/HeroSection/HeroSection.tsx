@@ -20,6 +20,7 @@ export default function HeroSection({
   subheading,
   hasButtonLink,
   buttonLinkLabel,
+  buttonLinkHref,
   bgImage,
   featuredImage,
   featuredImageHeight,
@@ -46,7 +47,7 @@ export default function HeroSection({
           </Typography>
           {hasButtonLink && (
             <LinkButton
-              href={buttonLinkLabel}
+              href={buttonLinkHref}
               variant="success"
               label={buttonLinkLabel}
               size="lg"
