@@ -7,7 +7,7 @@ interface ContentBlockProps {
   featuredImageHeight: number;
   featuredImageAlt: string;
   heading: string;
-  content: string;
+  content: string | React.ReactNode;
   hasBlockShadow: boolean;
   hasBorder: boolean;
   imagePosition: "left" | "right";

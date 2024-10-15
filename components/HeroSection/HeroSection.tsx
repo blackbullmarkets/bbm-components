@@ -4,7 +4,7 @@ import Image from "next/image";
 
 interface HeroProps {
   heading: string;
-  subheading: string;
+  subheading: string | React.ReactNode;
   hasButtonLink: boolean;
   buttonLinkLabel: string;
   buttonLinkHref: string;
