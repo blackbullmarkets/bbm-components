@@ -1,11 +1,11 @@
 interface InputProps {
   fieldID: string;
-  label: string;
+  label?: string;
   placeholder: string;
   validatingText: string;
-  isValidating: boolean;
+  isValidating?: boolean;
   errorText: string;
-  isError: boolean;
+  isError?: boolean;
 }
 
 export default function InputField({
@@ -13,9 +13,9 @@ export default function InputField({
   label,
   placeholder,
   validatingText,
-  isValidating,
+  isValidating = false,
   errorText,
-  isError,
+  isError = false,
 }: InputProps) {
   return (
     <div>
