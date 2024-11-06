@@ -94,35 +94,176 @@ export default function Footer() {
           />
         </div>
       </section>
-      <section className="bg-black-default container mx-auto">
-        <div className="flex flex-col gap-3">
-          <Typography variant="h5" color="text-white">
-            <span className="uppercase">Find us on</span>
-          </Typography>
-          <Typography variant="body-lg" color="text-white">
-            <strong>+52 338 526 2705</strong>
-          </Typography>
-          <Typography variant="h5" color="text-white">
-            <span className="uppercase">NZ Phone</span>
-          </Typography>
-          <Typography variant="body-lg" color="text-white">
-            <strong>+64 9 558 5142</strong>
-          </Typography>
-          <Typography variant="h5" color="text-white">
-            <span className="uppercase">Email</span>
-          </Typography>
-          <Typography variant="body-lg" color="text-white">
-            <strong>support@blackbull.com</strong>
-          </Typography>
-          <Typography variant="h5" color="text-white">
-            <span className="uppercase">Head Office</span>
-          </Typography>
-          <Typography variant="body-lg" color="text-white">
-            <strong>
+      <section className="bg-black-default container mx-auto flex py-8">
+        <div className="flex flex-col w-1/3 gap-y-8 pr-16">
+          <div>
+            <Typography variant="h5" color="text-white">
+              <span className="uppercase">Find us on</span>
+            </Typography>
+          </div>
+          <div>
+            <Typography variant="h5" color="text-white">
+              <span className="uppercase">MX Phone</span>
+            </Typography>
+            <Typography variant="body" color="text-white">
+              +52 338 526 2705
+            </Typography>
+          </div>
+          <div>
+            <Typography variant="h5" color="text-white">
+              <span className="uppercase">NZ Phone</span>
+            </Typography>
+            <Typography variant="body" color="text-white">
+              +64 9 558 5142
+            </Typography>
+          </div>
+          <div>
+            <Typography variant="h5" color="text-white">
+              <span className="uppercase">Email</span>
+            </Typography>
+            <Typography variant="body" color="text-white">
+              support@blackbull.com
+            </Typography>
+          </div>
+          <div>
+            <Typography variant="h5" color="text-white">
+              <span className="uppercase">Head Office</span>
+            </Typography>
+            <Typography variant="body" color="text-white">
               Level 20, HSBC Tower, 188 Quay Street, Auckland 1010, New Zealand
-            </strong>
-          </Typography>
+            </Typography>
+          </div>
         </div>
+        <div className="grid grid-cols-4 w-2/3 gap-y-8 gap-x-16">
+          <div>
+            <Typography variant="h4" color="text-white">
+              Markets
+            </Typography>
+            <ul className="text-white mt-6">
+              <li>Markets Overview</li>
+              <li>Forex</li>
+              <li>Commodities</li>
+              <li>Futures</li>
+              <li>Indices</li>
+            </ul>
+          </div>
+          <div>
+            <Typography variant="h4" color="text-white">
+              Markets
+            </Typography>
+            <ul className="text-white mt-6">
+              <li>Markets Overview</li>
+              <li>Forex</li>
+              <li>Commodities</li>
+              <li>Futures</li>
+              <li>Indices</li>
+            </ul>
+          </div>
+          <div>
+            <Typography variant="h4" color="text-white">
+              Markets
+            </Typography>
+            <ul className="text-white mt-6">
+              <li>Markets Overview</li>
+              <li>Forex</li>
+              <li>Commodities</li>
+              <li>Futures</li>
+              <li>Indices</li>
+            </ul>
+          </div>
+          <div>
+            <Typography variant="h4" color="text-white">
+              Markets
+            </Typography>
+            <ul className="text-white mt-6">
+              <li>Markets Overview</li>
+              <li>Forex</li>
+              <li>Commodities</li>
+              <li>Futures</li>
+              <li>Indices</li>
+            </ul>
+          </div>
+          <div>
+            <Typography variant="h4" color="text-white">
+              Markets
+            </Typography>
+            <ul className="text-white mt-6">
+              <li>Markets Overview</li>
+              <li>Forex</li>
+              <li>Commodities</li>
+              <li>Futures</li>
+              <li>Indices</li>
+            </ul>
+          </div>
+          <div>
+            <Typography variant="h4" color="text-white">
+              Markets
+            </Typography>
+            <ul className="text-white mt-6">
+              <li>Markets Overview</li>
+              <li>Forex</li>
+              <li>Commodities</li>
+              <li>Futures</li>
+              <li>Indices</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white text-center py-12">
+        <Typography variant="body" color="text-black-default">
+          BlackBull Markets is proud to be a Major Partner of Starship
+          Foundation supporting the vital work of Starship, New Zealand’s
+          national children’s hospital.
+        </Typography>
+      </section>
+      <section className="container mx-auto py-12">
+        <Typography variant="caption" color="text-white">
+          BlackBull Markets and its associated entities have access to provide
+          over 26000 tradable instruments to clients across all our Trading
+          Platforms.
+        </Typography>
+        <Typography variant="caption" color="text-white">
+          Black Bull Group Limited (trading name: BlackBull Markets) is a
+          company registered and incorporated in New Zealand (Company Number
+          5463921, NZBN 9429041417799) located at Level 20, 188 Quay St Auckland
+          1010. Black Bull Group Limited is a registered Financial Services
+          Provider (FSP403326). BBG Limited (trading name: BlackBull Markets) is
+          limited liability company incorporated and registered under the laws
+          of Seychelles, with company number 857010-1 and a registered address
+          at JUC Building, Office F7B, Providence Zone 18, Mahe, Seychelles.
+          BlackBull Markets’ head office is in Auckland, New Zealand. The
+          Company is authorised and regulated by the Financial Services
+          Authority in Seychelles (“FSA”) under license number SD045 for the
+          provision of the investment services. BlackBull Group UK Limited is
+          registered in the United Kingdom, Company Number – 9556804. Services
+          provided by: BlackBull Group UK Limited (Company Number – 9556804)
+          Address – 6 Thornes Office Park Monckton Road, West Yorkshire,
+          England, WF2 7AN.
+        </Typography>
+        <Typography variant="caption" color="text-white">
+          Black Bull Trade Limited is a New Zealand limited liability company
+          incorporated and registered under the laws of New Zealand, with NZBN
+          9429049891041 and registered address Floor 20, 188 Quay Street,
+          Auckland Central, Auckland 1010, New Zealand. Black Bull Trade is
+          registered FSP1002113. Risk Warning: Trading foreign exchange on
+          margin carries a high level of risk and may not be suitable for all
+          investors. The high degree of leverage can work against you as well as
+          for you. Before deciding to trade foreign exchange, you should
+          carefully consider your investment objectives, level of experience,
+          and risk appetite. The possibility exists that you could sustain a
+          loss of some or all of your initial investment and, therefore, you
+          should not invest money you cannot afford to lose. You should make
+          yourself aware of all the risks associated with foreign exchange
+          trading and seek advice from an independent financial advisor if you
+          have any questions or concerns as to how a loss would affect your
+          lifestyle. BlackBull Markets does not accept client applications from
+          Canada and the United States. This offer of services is also not
+          intended for residents of the European Union, the United Kingdom nor
+          any non-resident of New Zealand. The domain blackbull.com is
+          registered under our company, Black Bull Global Limited. Black Bull
+          Group Limited is wholly owned by Black Bull Global Limited. Copyright
+          © 2024 Black Bull Group Limited. All Rights Reserved.
+        </Typography>
       </section>
     </footer>
   );
