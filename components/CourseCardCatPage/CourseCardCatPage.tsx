@@ -27,7 +27,7 @@ export default function CourseCardCatPage({
           {categoryTitle}
         </Typography>
         <Typography variant="body-lg" color="text-black-50">
-          <div dangerouslySetInnerHTML={{ __html: categoryDescription }}></div>
+          {categoryDescription}
         </Typography>
         <LinkButton
           href={categoryLink}
