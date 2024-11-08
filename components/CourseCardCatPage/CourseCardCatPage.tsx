@@ -31,7 +31,7 @@ export default function CourseCardCatPage({
         alt={categoryTitle}
       />
       <div className="flex flex-col items-start gap-4">
-        <StarLevel level={level} variant="horizontal" />
+        {level > 0 && <StarLevel level={level} variant="horizontal" />}
         <Typography variant="h2" color="text-black-default">
           {categoryTitle}
         </Typography>
