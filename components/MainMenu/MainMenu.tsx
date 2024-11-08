@@ -24,7 +24,7 @@ export default function MainMenu({
 }: MainMenuProps) {
   return (
     <header className="fixed z-50 shadow-xl w-full bg-white top-0 left-0">
-      <nav className="container mx-auto flex items-center justify-between px-6 py-3.5">
+      <nav className="container mx-auto flex items-center justify-between px-6 pt-3.5">
         <Link href={homepageUrl}>{logo}</Link>
         <MainMenuListingComponent parentMenuItems={menuItems} />
       </nav>
