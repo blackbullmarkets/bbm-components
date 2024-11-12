@@ -1,4 +1,5 @@
 import Typography from "../Typography/Typography";
+import parse from "html-react-parser";
 
 interface DoubleLineButtonProps {
   href: string;
@@ -32,7 +33,7 @@ export default function DoubleLineButton({
           <strong>{firstLine}</strong>
         </Typography>
         <Typography variant="body-sm" color="text-white">
-          {secondLine}
+          {parse(secondLine)}
         </Typography>
       </div>
     </button>
