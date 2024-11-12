@@ -2,7 +2,6 @@ import Typography from "../Typography/Typography";
 import parse from "html-react-parser";
 
 interface DoubleLineButtonProps {
-  href: string;
   firstLine: string;
   secondLine: string;
   variant: "success" | string;
@@ -11,7 +10,6 @@ interface DoubleLineButtonProps {
 }
 
 export default function DoubleLineButton({
-  href,
   firstLine,
   secondLine,
   icon,
