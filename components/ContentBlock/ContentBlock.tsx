@@ -43,7 +43,13 @@ export default function ContentBlock({
           />
         )}
         {video && (
-          <iframe frameBorder="no" height="340" scrolling="no" src={video} />
+          <iframe
+            frameBorder="no"
+            height="340"
+            width="100%"
+            scrolling="no"
+            src={video}
+          />
         )}
       </div>
       <div className="flex flex-col gap-6 basis-1/2 justify-center">
