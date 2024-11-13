@@ -16,6 +16,7 @@ const meta: Meta<typeof LinkButton> = {
         "danger",
         "light",
         "inactive",
+        "transparent",
       ],
       description: "The color of this link button.",
     },
