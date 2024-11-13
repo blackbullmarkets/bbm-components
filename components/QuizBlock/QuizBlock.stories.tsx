@@ -1,5 +1,8 @@
+"use client";
+
 import type { Meta, StoryObj } from "@storybook/react";
 import QuizBlock from "./QuizBlock";
+import LinkButton from "@/components/LinkButton/LinkButton";
 
 const meta: Meta<typeof QuizBlock> = {
   component: QuizBlock,
@@ -8,6 +11,9 @@ const meta: Meta<typeof QuizBlock> = {
       control: "text",
     },
     options: {
+      control: "object",
+    },
+    nextButton: {
       control: "object",
     },
   },
@@ -19,6 +25,15 @@ type Story = StoryObj<typeof QuizBlock>;
 
 const args = {
   quizQuestion: "What's the deal with PIPS?",
+  nextButton: (
+    <LinkButton
+      href="http://blackbull.com"
+      variant="success"
+      size="lg"
+      label="Next Lesson"
+      bold
+    />
+  ),
   options: [
     {
       answer: "0 - An answer, which is not the right one.",
@@ -48,6 +63,5 @@ const args = {
 };
 
 export const Common: Story = {
-  name: "Common",
   args,
 };

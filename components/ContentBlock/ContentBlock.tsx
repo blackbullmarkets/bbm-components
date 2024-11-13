@@ -7,7 +7,7 @@ interface ContentBlockProps {
   featuredImageHeight: number;
   featuredImageAlt: string;
   heading: string;
-  content: string;
+  content: string | React.ReactNode;
   hasBlockShadow: boolean;
   hasBorder: boolean;
   imagePosition: "left" | "right";
@@ -43,9 +43,7 @@ export default function ContentBlock({
         <Typography variant="h3" color="text-primary-default">
           {heading}
         </Typography>
-        <Typography variant="body" color="text-black-50">
-          {content}
-        </Typography>
+        <div className="text-base text-black-50">{content}</div>
       </div>
     </section>
   );

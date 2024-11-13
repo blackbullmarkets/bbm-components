@@ -14,7 +14,7 @@ interface Props {
     | "inactive";
   size: "sm" | "base" | "lg";
   bold: boolean;
-  onClickFn: any;
+  onClickFn?: () => void;
 }
 
 export default function Button({
@@ -23,7 +23,7 @@ export default function Button({
   size = "base",
   label = "Link",
   bold = true,
-  onClickFn = null,
+  onClickFn,
 }: Props) {
   let buttonColor = "";
   let sizeVariant = "";

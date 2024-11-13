@@ -22,6 +22,7 @@ const args = {
       lessonNumber: 2,
       lessonTotal: 10,
       lessonDuration: 5,
+      ID: "1",
     },
     {
       level: 2,
@@ -32,6 +33,7 @@ const args = {
       lessonNumber: 2,
       lessonTotal: 10,
       lessonDuration: 5,
+      ID: "2",
     },
     {
       level: 3,
@@ -42,12 +44,12 @@ const args = {
       lessonNumber: 2,
       lessonTotal: 10,
       lessonDuration: 5,
+      ID: "3",
     },
   ],
 };
 
 export const Common: Story = {
-  name: "Common",
   parameters: {
     layout: "centered",
   },

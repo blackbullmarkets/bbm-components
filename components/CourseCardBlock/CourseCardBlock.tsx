@@ -26,6 +26,7 @@ export default function CourseCardBlock({
                 lessonNumber={lesson.lessonNumber}
                 lessonDuration={lesson.lessonDuration}
                 lessonTotal={lesson.lessonTotal}
+                key={lesson.ID}
               />
             ))}
         </div>

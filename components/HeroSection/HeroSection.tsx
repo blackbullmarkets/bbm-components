@@ -4,7 +4,7 @@ import Image from "next/image";
 
 interface HeroProps {
   heading: string;
-  subheading: string;
+  subheading: string | React.ReactNode;
   hasButtonLink: boolean;
   buttonLinkLabel: string;
   buttonLinkHref: string;
@@ -20,6 +20,7 @@ export default function HeroSection({
   subheading,
   hasButtonLink,
   buttonLinkLabel,
+  buttonLinkHref,
   bgImage,
   featuredImage,
   featuredImageHeight,
@@ -41,12 +42,10 @@ export default function HeroSection({
           <Typography variant="h1" color="text-black">
             {heading}
           </Typography>
-          <Typography variant="body-lg" color="text-black-50">
-            {subheading}
-          </Typography>
+          <div className="text-md text-black-50">{subheading}</div>
           {hasButtonLink && (
             <LinkButton
-              href={buttonLinkLabel}
+              href={buttonLinkHref}
               variant="success"
               label={buttonLinkLabel}
               size="lg"

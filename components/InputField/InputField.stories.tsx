@@ -29,7 +29,6 @@ export default meta;
 type Story = StoryObj<typeof InputField>;
 
 export const Common: Story = {
-  name: "Common",
   parameters: {
     layout: "centered",
   },

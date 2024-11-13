@@ -51,7 +51,6 @@ export default meta;
 type Story = StoryObj<typeof ContentBlock>;
 
 export const Common: Story = {
-  name: "Common",
   parameters: {
     layout: "centered",
   },

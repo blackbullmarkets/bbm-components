@@ -9,6 +9,8 @@ interface CourseCardCatPageProps {
   featuredImage: string;
   categoryDescription: string;
   categoryLink: string;
+  imageWidth: number;
+  imageHeight: number;
 }
 
 export default function CourseCardCatPage({
@@ -17,17 +19,24 @@ export default function CourseCardCatPage({
   categoryDescription,
   featuredImage,
   categoryLink,
+  imageHeight = 270,
+  imageWidth = 480,
 }: CourseCardCatPageProps) {
   return (
-    <div className="w-full flex gap-8 py-6">
-      <Image src={featuredImage} width={360} height={280} alt={categoryTitle} />
+    <div className="w-full flex gap-8 py-6 items-start">
+      <Image
+        src={featuredImage}
+        width={imageWidth}
+        height={imageHeight}
+        alt={categoryTitle}
+      />
       <div className="flex flex-col items-start gap-4">
-        <StarLevel level={level} variant="horizontal" />
+        {level > 0 && <StarLevel level={level} variant="horizontal" />}
         <Typography variant="h2" color="text-black-default">
           {categoryTitle}
         </Typography>
         <Typography variant="body-lg" color="text-black-50">
-          <div dangerouslySetInnerHTML={{ __html: categoryDescription }}></div>
+          {categoryDescription}
         </Typography>
         <LinkButton
           href={categoryLink}

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import HeroSection from "./HeroSection";
-import forexHeroImage from "@/assets/images/forex_hero_image.png";
 
 const meta: Meta<typeof HeroSection> = {
   component: HeroSection,
@@ -41,7 +40,6 @@ export default meta;
 type Story = StoryObj<typeof HeroSection>;
 
 export const Common: Story = {
-  name: "Common",
   args: {
     heading: "Trade with lightning fast execution speed",
     subheading:

@@ -1,3 +1,5 @@
+"use client";
+
 import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
 import { useState } from "react";
@@ -12,9 +14,14 @@ interface QuizAnswer {
 interface QuizProps {
   quizQuestion: string;
   options: QuizAnswer[];
+  nextButton: React.ReactNode;
 }
 
-export default function QuizBlock({ quizQuestion, options }: QuizProps) {
+export default function QuizBlock({
+  quizQuestion,
+  options,
+  nextButton,
+}: QuizProps) {
   const [buttonState, setButtonState] = useState("inactive");
   const [answers, setAnswers] = useState(options);
   const [showNext, setShowNext] = useState(false);
@@ -29,7 +36,7 @@ export default function QuizBlock({ quizQuestion, options }: QuizProps) {
   }
   function submitAnswer() {
     const newAnswers = [...options];
-    newAnswers.map((ans, index) => {
+    newAnswers.map((ans) => {
       if (ans.variant === "selected") {
         if (ans.isRightAnswer) {
           ans.variant = "success";
@@ -51,6 +58,7 @@ export default function QuizBlock({ quizQuestion, options }: QuizProps) {
         {answers &&
           answers.map((answer, i) => (
             <QuizOption
+              key={i}
               onClickFn={() => selectAnswer(i)}
               variant={answer.variant}
               answer={answer.answer}
@@ -66,21 +74,12 @@ export default function QuizBlock({ quizQuestion, options }: QuizProps) {
           onClickFn={submitAnswer}
           bold
         />
-        {showNext && (
-          <Button
-            id="nextButton"
-            variant="success"
-            label="Next"
-            size="lg"
-            onClickFn={null}
-            bold
-          />
-        )}
+        {showNext && nextButton}
       </div>
       <ul>
         {options &&
           options.map((option, i) => (
-            <li>{option.selected && option.answer}</li>
+            <li key={i}>{option.selected && option.answer}</li>
           ))}
       </ul>
     </div>

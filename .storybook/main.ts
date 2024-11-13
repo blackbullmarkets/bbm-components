@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "@newhighsco/storybook-addon-svgr"
   ],
   docs: {
     defaultName: "Documentation",

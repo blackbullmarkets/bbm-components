@@ -54,7 +54,6 @@ const storyArgs = {
 };
 
 export const Common: Story = {
-  name: "Common",
   parameters: {
     layout: "centered",
   },

@@ -6,19 +6,18 @@ interface TradingPlatformCardProps {
   title: string;
   excerpt: string;
   content: string;
-  icon: "tv" | "mt4" | "mt5" | "ctrader" | "bb";
+  icon: "tv" | "mt4" | "mt5" | "ctrader" | "bb" | string;
   link_to: string;
 }
 
 export default function TradingPlatformCard({
   title,
-  content,
   link_to,
   icon,
   excerpt,
 }: TradingPlatformCardProps) {
   return (
-    <div className="w-1/3 p-8 bg-white rounded-sm flex flex-col justify-start items-start border-2 border-primary-default rounded-xm gap-5">
+    <div className="p-8 bg-white rounded-sm flex flex-col justify-start items-start border-2 border-primary-default rounded-xm gap-5">
       <div className="flex gap-2 items-center mb-2">
         <Image
           src={`/platform_icons/${icon}.svg`}

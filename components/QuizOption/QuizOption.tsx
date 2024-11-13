@@ -1,5 +1,5 @@
 interface QuizOptionProps {
-  onClickFn: any;
+  onClickFn: () => void;
   variant: string;
   answer: string;
 }

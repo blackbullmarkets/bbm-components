@@ -13,8 +13,9 @@ interface Props {
     | "info"
     | "warning"
     | "danger"
+    | "transparent"
     | "inactive";
-  size: string | "sm" | "base" | "lg";
+  size: "sm" | "base" | "lg" | "top-menu";
   bold: boolean;
 }
 
@@ -63,6 +64,10 @@ export default function LinkButton({
       buttonColor =
         "bg-black-25 text-black-75 pointer-events-none cursor-not-allowed inline-block";
       break;
+    case "transparent":
+      buttonColor =
+        "text-white/70 border border-white/70 hover:border-white hover:text-white inline-block";
+      break;
   }
   switch (size) {
     case "sm":
@@ -73,6 +78,10 @@ export default function LinkButton({
       break;
     case "lg":
       sizeVariant = "py-4 px-8";
+      break;
+    case "top-menu":
+      sizeVariant = "py-1.5 px-2.5";
+      break;
   }
 
   return (

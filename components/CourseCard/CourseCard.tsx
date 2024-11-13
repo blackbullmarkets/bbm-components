@@ -26,7 +26,7 @@ export default function CourseCard({
 }: CourseCardProps) {
   return (
     <div className="shadow-base bg-white p-8 flex flex-col gap-3">
-      <StarLevel level={level} variant="vertical" />
+      {level > 0 && <StarLevel level={level} variant="vertical" />}
       <Image src={featuredImage} width={360} height={280} alt={courseTitle} />
       <Typography color="text-primary-default" variant="h5">
         <Link href={courseLink}>{courseTitle}</Link>
