@@ -20,11 +20,13 @@ export default function InputField({
   return (
     <div>
       <label className="block" htmlFor={fieldID}>
-        <span className="block text-labelgray font-semibold mb-3 ml-1">
-          {label}
-        </span>
+        {label && (
+          <span className="block text-labelgray font-semibold mb-3 ml-1">
+            {label}
+          </span>
+        )}
         <input
-          className="block w-full border-2 border-black-25 rounded-sm py-5 px-4 placeholder:text-base placeholder:text-black-25 hover:border-black-50 focus:outline-none focus:ring-2 focus:border-primary-default focus:ring-primary-default"
+          className="block w-full border-2 border-black-25 rounded py-3.5 px-8 placeholder:text-base placeholder:text-black-25 hover:border-black-50 focus:outline-none focus:ring-2 focus:border-primary-default focus:ring-primary-default"
           placeholder={placeholder}
           id={fieldID}
         />

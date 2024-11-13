@@ -1,4 +1,5 @@
-import Button from "../Button/Button";
+import Link from "next/link";
+import LinkButton from "../LinkButton/LinkButton";
 import InputField from "../InputField/InputField";
 import Typography from "../Typography/Typography";
 import Image from "next/image";
@@ -19,15 +20,15 @@ export default function Footer() {
         <Typography color="text-white" variant="body-lg">
           in less than 5 minutes
         </Typography>
-        <div className="flex justify-center items-center content-center w-full gap-4 mb-12">
+        <div className="flex justify-center items-center content-center w-full gap-4 mb-12 mt-5">
           <InputField
             fieldID="join_now"
             placeholder="Email address"
             validatingText="We're sending you to our Secure Client Area..."
             errorText="Please, use a valid email address."
           />
-          <Button
-            id="join_now_button"
+          <LinkButton
+            href="https://secure.blackbull.com/auth/register-live"
             label="Join Now"
             variant="success"
             size="lg"
@@ -100,6 +101,68 @@ export default function Footer() {
             <Typography variant="h5" color="text-white">
               <span className="uppercase">Find us on</span>
             </Typography>
+            <ul className="flex gap-2 mt-2">
+              <li>
+                <Link href="https://www.facebook.com/blackbullmarkets/">
+                  <Image
+                    src="/social_icons/fb.svg"
+                    width={30}
+                    height={30}
+                    alt="BlackBull in facebook.com"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://nz.linkedin.com/company/blackbull-group-limited">
+                  <Image
+                    src="/social_icons/link.svg"
+                    width={30}
+                    height={30}
+                    alt="BlackBull in facebook.com"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://instagram.com/blackbull_markets">
+                  <Image
+                    src="/social_icons/insta.svg"
+                    width={30}
+                    height={30}
+                    alt="BlackBull in facebook.com"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://twitter.com/blackbullforex?lang=en">
+                  <Image
+                    src="/social_icons/x.svg"
+                    width={30}
+                    height={30}
+                    alt="BlackBull in facebook.com"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://api.whatsapp.com/send/?phone=642102886398">
+                  <Image
+                    src="/social_icons/wa.svg"
+                    width={30}
+                    height={30}
+                    alt="BlackBull in facebook.com"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.tradingview.com/broker/BlackBull_Markets/">
+                  <Image
+                    src="/social_icons/tw.svg"
+                    width={30}
+                    height={30}
+                    alt="BlackBull in facebook.com"
+                  />
+                </Link>
+              </li>
+            </ul>
           </div>
           <div>
             <Typography variant="h5" color="text-white">
@@ -137,14 +200,24 @@ export default function Footer() {
         <div className="grid grid-cols-4 w-2/3 gap-y-8 gap-x-16">
           <div>
             <Typography variant="h4" color="text-white">
-              Markets
+              Learn
             </Typography>
             <ul className="text-white mt-6">
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
+              <li>
+                <Link href="/forex">Forex</Link>
+              </li>
+              <li>
+                <Link href="/forex">Commodities</Link>
+              </li>
+              <li>
+                <Link href="/crypto">Crypto</Link>
+              </li>
+              <li>
+                <Link href="/stocks">Stocks</Link>
+              </li>
+              <li>
+                <Link href="/platforms">Platforms</Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -152,69 +225,163 @@ export default function Footer() {
               Markets
             </Typography>
             <ul className="text-white mt-6">
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
+              <li>
+                <Link href="https://blackbull.com/en/markets-overview/">
+                  Markets Overview
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/trading/instruments/forex/">
+                  Forex
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/trading/instruments/equities/">
+                  Shares
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/trading/instruments/commodities/">
+                  Commodities
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/trading/instruments/futures/">
+                  Futures
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/trading/instruments/indices/">
+                  Indices
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <Typography variant="h4" color="text-white">
-              Markets
+              Platforms
             </Typography>
             <ul className="text-white mt-6">
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/tradingview/">
+                  TradingView
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/ctrader/">
+                  cTrader
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/metatrader-5/">
+                  MetaTrader 5
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/metatrader-4/">
+                  MetaTrader 4
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/webtrader/">
+                  MetaTrader Web Trader
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/blackbull-copytrader/">
+                  BlackBull CopyTrader
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/blackbull-invest/">
+                  BlackBull Invest
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/platforms/trading-tools/">
+                  Trading Tools
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <Typography variant="h4" color="text-white">
-              Markets
+              About
             </Typography>
             <ul className="text-white mt-6">
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
+              <li>
+                <Link href="https://blackbull.com/en/our-company/">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/our-company/account-comparison/">
+                  Account Comparison
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/our-company/company-news/">
+                  Company News
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/our-company/compliance/">
+                  Compliance
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/our-company/careers/">
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <Typography variant="h4" color="text-white">
-              Markets
+              Legal
             </Typography>
             <ul className="text-white mt-6">
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
-            </ul>
-          </div>
-          <div>
-            <Typography variant="h4" color="text-white">
-              Markets
-            </Typography>
-            <ul className="text-white mt-6">
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
+              <li>
+                <Link href="https://blackbull.com/en/legal/">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/legal/">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/legal/">Legal</Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/our-company/compliance/">
+                  Compliance
+                </Link>
+              </li>
+              <li>
+                <Link href="https://blackbull.com/en/legal/disputes-resolution/">
+                  Disputes Resolution
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <section className="bg-white text-center py-12">
-        <Typography variant="body" color="text-black-default">
-          BlackBull Markets is proud to be a Major Partner of Starship
-          Foundation supporting the vital work of Starship, New Zealand’s
-          national children’s hospital.
-        </Typography>
+      <section className="bg-white text-center py-8">
+        <div className="container mx-auto flex items-center gap-6">
+          <Image
+            src="/images/starship.png"
+            width={142}
+            height={81}
+            alt="Starship Major Partner"
+          />
+          <Typography variant="body" color="text-black-default">
+            BlackBull Markets is proud to be a Major Partner of Starship
+            Foundation supporting the vital work of Starship, New Zealand’s
+            national children’s hospital.
+          </Typography>
+        </div>
       </section>
       <section className="container mx-auto py-12">
         <Typography variant="caption" color="text-white">
