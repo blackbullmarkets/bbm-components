@@ -26,7 +26,7 @@ type Story = StoryObj<typeof MainMenu>;
 
 const BlackBullLogo = () => {
   return (
-    <Image src="/logo/c.png" width="197" height="47" alt="BlackBull Academy" />
+    <Image src="/logo/c.png" width="127" height="30" alt="BlackBull Academy" />
   );
 };
 
