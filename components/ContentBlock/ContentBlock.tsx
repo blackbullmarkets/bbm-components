@@ -11,6 +11,7 @@ interface ContentBlockProps {
   hasBlockShadow: boolean;
   hasBorder: boolean;
   imagePosition: "left" | "right";
+  video: string;
 }
 
 export default function ContentBlock({
@@ -23,6 +24,7 @@ export default function ContentBlock({
   hasBlockShadow,
   hasBorder,
   imagePosition,
+  video = "",
 }: ContentBlockProps) {
   return (
     <section
@@ -32,12 +34,23 @@ export default function ContentBlock({
         ${hasBorder && "border border-4 border-black-25 rounded-xm"}`}
     >
       <div className="basis-1/2">
-        <Image
-          src={featuredImage}
-          width={featuredImageWidth}
-          height={featuredImageHeight}
-          alt={featuredImageAlt}
-        />
+        {!video && (
+          <Image
+            src={featuredImage}
+            width={featuredImageWidth}
+            height={featuredImageHeight}
+            alt={featuredImageAlt}
+          />
+        )}
+        {video && (
+          <iframe
+            frameBorder="no"
+            height="340"
+            width="100%"
+            scrolling="no"
+            src={video}
+          />
+        )}
       </div>
       <div className="flex flex-col gap-6 basis-1/2 justify-center">
         <Typography variant="h3" color="text-primary-default">
