@@ -28,7 +28,7 @@ export default function ContentBlock({
 }: ContentBlockProps) {
   return (
     <section
-      className={`container mx-auto flex gap-6 p-8 
+      className={`container mx-auto flex flex-col gap-6 p-8 justify-items-center gap-y-2
         ${imagePosition === "left" ? "flex-row" : "flex-row-reverse"}
         ${hasBlockShadow && "shadow-lg"} 
         ${hasBorder && "border border-4 border-black-25 rounded-xm"}`}

@@ -14,7 +14,7 @@ export default function CourseCardBlock({
             {blockTitle}
           </Typography>
         </div>
-        <div className="grid grid-cols-3 gap-5 px-5">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-5">
           {lessonList.length != 0 &&
             lessonList.map((lesson) => (
               <CourseCard
