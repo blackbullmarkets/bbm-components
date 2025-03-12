@@ -2,6 +2,7 @@ import Image from "next/image";
 import Typography from "../Typography/Typography";
 import StarLevel from "../StarLevel/StarLevel";
 import Link from "next/link";
+import parse from "html-react-parser";
 
 interface CourseCardProps {
   level: number;
@@ -32,10 +33,10 @@ export default function CourseCard({
       {level > 0 && <StarLevel level={level} variant="vertical" />}
       <Image src={featuredImage} width={360} height={280} alt={courseTitle} />
       <Typography color="text-primary-default" variant="h5">
-        <Link href={courseLink}>{courseTitle}</Link>
+        <Link href={courseLink}>{parse(courseTitle)}</Link>
       </Typography>
       <Typography color="text-black-50" variant="caption">
-        {excerpt}
+        {parse(excerpt)}
       </Typography>
       <Typography color="text-black" variant="caption">
         Lesson {lessonNumber} of {lessonTotal} | {lessonDuration} Min
