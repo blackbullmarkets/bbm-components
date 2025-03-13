@@ -9,10 +9,10 @@ interface CourseCardProps {
   courseTitle: string;
   courseLink: string;
   featuredImage: string;
-  excerpt: string;
-  lessonNumber: number;
-  lessonTotal: number;
-  lessonDuration: number;
+  excerpt?: string;
+  lessonNumber?: number;
+  lessonTotal?: number;
+  lessonDuration?: number;
 }
 
 export default function CourseCard({
@@ -35,12 +35,16 @@ export default function CourseCard({
       <Typography color="text-primary-default" variant="h5">
         <Link href={courseLink}>{parse(courseTitle)}</Link>
       </Typography>
-      <Typography color="text-black-50" variant="caption">
-        {parse(excerpt)}
-      </Typography>
-      <Typography color="text-black" variant="caption">
-        Lesson {lessonNumber} of {lessonTotal} | {lessonDuration} Min
-      </Typography>
+      {excerpt && (
+        <Typography color="text-black-50" variant="caption">
+          {parse(excerpt)}
+        </Typography>
+      )}
+      {lessonNumber && (
+        <Typography color="text-black" variant="caption">
+          Lesson {lessonNumber} of {lessonTotal} | {lessonDuration} Min
+        </Typography>
+      )}
     </Link>
   );
 }
