@@ -50,7 +50,7 @@ export default function ContentBlock({
             width="100%"
             scrolling="no"
             src={video}
-            allowFullScreen
+            allow="fullscreen;"
           />
         )}
       </div>
