@@ -56,7 +56,7 @@ export default function ContentBlock({
       </div>
       <div className="flex flex-col gap-6 basis-1/2 justify-center">
         <Typography variant="h3" color="text-primary-default">
-          "Test:"+{heading}
+          {heading}
         </Typography>
         <div className="text-base text-black-50">{content}</div>
       </div>
