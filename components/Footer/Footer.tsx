@@ -101,7 +101,7 @@ export default function Footer() {
             <Typography variant="h5" color="text-white">
               <span className="uppercase">Find us on</span>
             </Typography>
-            <ul className="flex gap-2 mt-2">
+            <ul className="flex flex-row gap-2 mt-2">
               <li>
                 <Link href="https://www.facebook.com/blackbullmarkets/">
                   <Image
@@ -369,7 +369,7 @@ export default function Footer() {
         </div>
       </section>
       <section className="bg-white text-left py-4 hover:bg-[#ee3e81] hover:text-white transition-colors duration-300 group">
-        <div className="container mx-auto flex items-center gap-6">
+        <div className="container mx-auto flex flex-col tablet:flex-row items-center gap-6">
           <Image
             src="/images/starship.png"
             width={110} // Set the actual width of the image
