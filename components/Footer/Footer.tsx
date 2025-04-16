@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
       </section>
       <section className="bg-black-default container mx-auto flex flex-col tablet:flex-row py-8">
-        <div className="flex flex-col w-full tablet:w-1/3 gap-y-8 pr-16">
+        <div className="flex flex-col w-full tablet:w-1/3 gap-y-8 pr-18">
           <div>
             <Typography variant="h5" color="text-white">
               <span className="uppercase">Find us on</span>
@@ -164,36 +164,20 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
-            <Typography variant="h5" color="text-white">
-              <span className="uppercase">MX Phone</span>
-            </Typography>
-            <Typography variant="body" color="text-white">
-              +52 338 526 2705
-            </Typography>
-          </div>
-          <div>
-            <Typography variant="h5" color="text-white">
-              <span className="uppercase">NZ Phone</span>
-            </Typography>
-            <Typography variant="body" color="text-white">
-              +64 9 558 5142
-            </Typography>
-          </div>
-          <div>
+              <div className="gap-y-2 flex flex-col">
+              <Typography variant="h5" color="text-white">
+                <span>Customer Support Contacts</span>
+              </Typography>
+              <Typography variant="body" color="text-white">
+                English support: <a href="tel:+6495585142" className="text-white">+64 9 558 5142</a>
+              </Typography>
+            </div>
+          <div className="gap-y-2 flex flex-col">
             <Typography variant="h5" color="text-white">
               <span className="uppercase">Email</span>
             </Typography>
             <Typography variant="body" color="text-white">
-              support@blackbull.com
-            </Typography>
-          </div>
-          <div>
-            <Typography variant="h5" color="text-white">
-              <span className="uppercase">Head Office</span>
-            </Typography>
-            <Typography variant="body" color="text-white">
-              Level 20, HSBC Tower, 188 Quay Street, Auckland 1010, New Zealand
+            <a href="mailto:support@blackbull.com" className="text-white">support@blackbull.com</a>
             </Typography>
           </div>
         </div>
