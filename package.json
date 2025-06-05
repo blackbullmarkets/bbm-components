@@ -1,12 +1,15 @@
 {
-  "name": "bbm-components",
-  "version": "0.1.5",
-  "private": true,
+  "name": "@blackbull/bbm-components",
+  "version": "0.1.6",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prepare": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
