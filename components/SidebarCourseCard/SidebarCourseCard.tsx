@@ -1,4 +1,5 @@
 import Typography from "../Typography/Typography";
+import Link from 'next/link';
 
 interface SidebarCourseCardProps {
   title: string;
@@ -7,6 +8,7 @@ interface SidebarCourseCardProps {
   inProgress: boolean;
   isFinished: boolean;
   isPending: boolean;
+  lessonUrl: string;
 }
 
 export default function SidebarCourseCard({
@@ -16,6 +18,7 @@ export default function SidebarCourseCard({
   isFinished,
   isPending,
   isActive,
+  lessonUrl,
 }: SidebarCourseCardProps) {
   const textColor = isActive ? "text-black-default" : "text-black-50";
   const textColorHex = isActive ? "#000" : "#7f7f7f";
@@ -23,9 +26,17 @@ export default function SidebarCourseCard({
     <div className="bg-lightgray p-4 flex items-center justify-between gap-5">
       {/* card body */}
       <div>
-        <Typography variant="h5" color={`${textColor}`}>
-          {title}
-        </Typography>
+        {!inProgress ? (
+            <Link href={lessonUrl}>
+              <Typography variant="h5" color={`${textColor}`}>
+                {title}
+              </Typography>
+            </Link>
+        ) : (
+            <Typography variant="h5" color={`${textColor}`}>
+              {title}
+            </Typography>
+        )}
         <div className="mt-5">
           <div className="flex items-center gap-1">
             <span
