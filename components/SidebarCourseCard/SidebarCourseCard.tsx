@@ -1,6 +1,8 @@
 import Typography from "../Typography/Typography";
 import Link from 'next/link';
 
+
+/* "version": "0.1.9" */
 interface SidebarCourseCardProps {
   title: string;
   duration: number;
