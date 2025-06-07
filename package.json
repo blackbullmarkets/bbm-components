@@ -1,9 +1,6 @@
 {
   "name": "@blackbull/bbm-components",
   "version": "0.1.9",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
