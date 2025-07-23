@@ -199,7 +199,7 @@ export default function MainMenu({
           {/* Navigation Links with Accordion - Scrollable */}
           <div className="flex-1 overflow-y-auto min-h-0">
             <nav>
-              {menuItems.map((item, index) => (
+              {menuItems.map((item) => (
                 <div key={item.ID}>
                   <button
                     onClick={() => {
