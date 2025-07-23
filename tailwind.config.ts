@@ -7,6 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Be Vietnam Pro', 'sans-serif'],
+    },
     fontSize: {
       xm: "0.75em" /* 12px */,
       sm: "0.875em" /* 14px */,
