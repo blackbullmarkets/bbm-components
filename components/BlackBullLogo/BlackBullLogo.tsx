@@ -1,4 +1,4 @@
-import BlackBullAcademyLogo from "@/public/logo/bb-academy.svg";
+import BlackBullAcademyLogo from "../../public/logo/bb-academy.svg";
 
 interface BlackBullLogoProps {
   variant: "black" | "white" | "academy";

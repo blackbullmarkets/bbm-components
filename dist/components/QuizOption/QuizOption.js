@@ -1,0 +1,21 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+export default function QuizOption({ onClickFn, variant, answer, }) {
+    let answerStyle = "";
+    switch (variant) {
+        case "unselected":
+            answerStyle = "bg-white text-black-50 border-black-50";
+            break;
+        case "selected":
+            answerStyle =
+                "bg-light-default text-primary-default border-primary-default";
+            break;
+        case "success":
+            answerStyle = "bg-success-light text-success-dark border-success-dark";
+            break;
+        case "error":
+            answerStyle = "bg-danger-light text-danger-default border-danger-default";
+            break;
+    }
+    return (_jsx("li", { onClick: onClickFn, className: `${answerStyle} rounded-xm border-2 px-6 py-3 my-4 font-bold`, children: answer }));
+}
+//# sourceMappingURL=QuizOption.js.map

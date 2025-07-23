@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Typography from "../Typography/Typography";
+import Link from 'next/link';
+export default function SidebarCourseCard({ title, duration, inProgress, isFinished, isPending, isActive, lessonUrl, }) {
+    const textColor = isActive ? "text-black-default" : "text-black-50";
+    const textColorHex = isActive ? "#000" : "#7f7f7f";
+    return (_jsxs("div", { className: "bg-lightgray p-4 flex items-center justify-between gap-5", children: [_jsxs("div", { children: [!inProgress ? (_jsx(Link, { href: lessonUrl, children: _jsx(Typography, { variant: "h5", color: `${textColor}`, children: title }) })) : (_jsx(Typography, { variant: "h5", color: `${textColor}`, children: title })), _jsx("div", { className: "mt-5", children: _jsxs("div", { className: "flex items-center gap-1", children: [_jsx("span", { className: "material-symbols-outlined", style: { fontSize: "1.250em", color: textColorHex }, children: "schedule" }), _jsxs(Typography, { variant: "body", color: `${textColor}`, children: [duration, " Min."] }), _jsx("span", { className: "material-symbols-outlined", style: { fontSize: "1.250em", color: textColorHex }, children: "quiz" }), _jsx(Typography, { variant: "body", color: `${textColor}`, children: "Quiz." })] }) })] }), _jsxs("div", { children: [inProgress && (_jsx("span", { className: "material-symbols-outlined", style: { color: "#13C640" }, children: "bar_chart" })), isFinished && (_jsx("span", { className: "material-symbols-outlined", style: { color: "#13C640" }, children: "check_circle" })), isPending && (_jsx("span", { className: "material-symbols-outlined", style: { color: "#7f7f7f" }, children: "check_circle" }))] })] }));
+}
+//# sourceMappingURL=SidebarCourseCard.js.map

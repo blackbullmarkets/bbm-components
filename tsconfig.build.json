@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "ES2017",
+    "jsx": "react-jsx",
+    "skipLibCheck": true
+  },
+  "include": [
+    "components/**/*",
+    "index.ts",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "**/*.test.*",
+    "**/*.stories.*",
+    "app/**/*",
+    ".storybook/**/*"
+  ]
+}
