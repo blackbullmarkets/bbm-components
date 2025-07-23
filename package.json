@@ -1,5 +1,5 @@
 {
-  "name": "@blackbull/bbm-components",
+  "name": "@blackbullmarkets/bbm-components",
   "version": "0.1.9",
   "scripts": {
     "dev": "npm run storybook",
