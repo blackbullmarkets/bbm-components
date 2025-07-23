@@ -41,6 +41,11 @@ jobs:
           npm config list
           npm whoami --registry=https://npm.pkg.github.com/
       
+      - name: Debug npm authentication
+        run: |
+          echo "Registry URL: $(npm config get registry)"
+          npm whoami --registry=https://npm.pkg.github.com/
+      
       - name: Publish package
         run: npm publish --registry=https://npm.pkg.github.com/
         env:
