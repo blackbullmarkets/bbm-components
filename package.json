@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "npm run storybook",
     "build": "tsc --project tsconfig.build.json && npm run copy-assets",
-    "copy-assets": "xcopy /s /e /i public dist\\public",
+    "copy-assets": "cp -r public dist/public",
     "build-nextjs": "next build",
     "start": "next start",
     "lint": "next lint",
