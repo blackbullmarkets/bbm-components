@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-black-default w-full">
       <section
-        className="container mx-auto text-center pt-12 bg-gradient-to-r from-black-default via-transparent to-black-default"
+        className="container mx-auto text-center pt-12 px-8 bg-gradient-to-r from-black-default via-transparent to-black-default"
         style={{
           background: "url(/images/footer_sky.png) top center no-repeat",
           backgroundSize: "cover",
@@ -44,7 +44,7 @@ export default function Footer() {
         />
       </section>
       <section
-        className="text-center pt-24 pb-6"
+        className="text-center pt-24 px-8 pb-6"
         style={{
           background: "url(/images/footer_floor.png) center bottom repeat",
           backgroundSize: "cover",
@@ -95,7 +95,7 @@ export default function Footer() {
           />
         </div>
       </section>
-      <section className="bg-black-default container mx-auto flex flex-col tablet:flex-row py-8">
+      <section className="bg-black-default container mx-auto flex flex-col tablet:flex-row py-8 px-8">
         <div className="flex flex-col w-full tablet:w-1/3 gap-y-8 pr-18">
           <div>
             <Typography variant="h5" color="text-white">
@@ -352,7 +352,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="bg-white text-left py-4 hover:bg-[#ee3e81] hover:text-white transition-colors duration-300 group">
+      <section className="bg-white text-left px-8 py-4 hover:bg-[#ee3e81] hover:text-white transition-colors duration-300 group">
         <div className="container mx-auto flex flex-col tablet:flex-row items-center gap-6">
           <Image
             src="/images/starship.png"
@@ -373,7 +373,7 @@ export default function Footer() {
           </Typography>
         </div>
       </section>
-      <section className="container mx-auto py-12 space-y-6">
+      <section className="container mx-auto px-8 py-12 space-y-6">
         <Typography variant="body" color="text-white">
         BlackBull Markets and its associated entities have access to provide over 26000 tradable instruments to clients across all our Trading Platforms.
         </Typography>
