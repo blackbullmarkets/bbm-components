@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Publishing the Package
+
+To publish the package to npm, you first need to log in to your npm account. You can do this by running the following command:
+
+```bash
+npm login
+```
+
+Once you are logged in, you can publish the package by running the following command:
+
+```bash
+npm publish
+```
+
+This will publish the package to the npm registry, making it available for others to use.

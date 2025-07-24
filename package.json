@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "npm run storybook",
     "build": "tsc --project tsconfig.build.json && npm run copy-assets",
-    "copy-assets": "cp -r public dist/public",
+    "copy-assets": "robocopy public dist/public /E /NFL /NDL /NJH /NJS /NC /NS /NP || exit 0",
     "build-nextjs": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blackbullmarkets/bbm-components.git"
+    "url": "git+https://github.com/blackbullmarkets/bbm-components.git"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
