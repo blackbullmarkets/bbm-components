@@ -18,16 +18,16 @@ export default function TradingPlatformCard({
 }: TradingPlatformCardProps) {
   return (
     <div className="p-8 bg-white rounded-sm flex flex-col justify-start items-start border-2 border-primary-default rounded-xm gap-5">
-      <div className="flex gap-2 items-center mb-2">
+      <div className="flex gap-2 items-center mb-2 w-full">
         <Image
           src={`/platform_icons/${icon}.svg`}
           width={50}
           height={50}
           alt={excerpt}
         />
-        <Typography variant="h4" color="text-black-default">
+        <h4 className="text-lg md:text-2xl font-bold text-black-default">
           {title}
-        </Typography>
+        </h4>
       </div>
       <Typography variant="body" color="text-black-50">
         {excerpt}
