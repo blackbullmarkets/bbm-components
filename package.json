@@ -1,6 +1,6 @@
 {
   "name": "@blackbullmarkets/bbm-components",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "scripts": {
     "dev": "npm run storybook",
     "build": "tsc --project tsconfig.build.json && npm run copy-assets",

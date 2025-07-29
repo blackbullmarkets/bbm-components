@@ -7,6 +7,21 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem', // 16px default
+        sm: '2rem',      // 32px on sm (640px+) - formerly tablet
+        lg: '2rem',      // 32px on lg (1024px+) - formerly laptop  
+        xl: '2rem',      // 32px on xl (1280px+) - formerly desktop
+      },
+      screens: {
+        sm: '100%',
+        md: '100%', 
+        lg: '100%',
+        xl: '1280px',
+      },
+    },
     fontFamily: {
       sans: ['Be Vietnam Pro', 'sans-serif'],
     },
@@ -69,17 +84,6 @@ const config: Config = {
         lg: "24px",
         xl: "70px",
       },
-    },
-    screens: {
-      lg: "1280px",
-      'tablet': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'desktop': '1280px',
-      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

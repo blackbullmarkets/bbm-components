@@ -37,7 +37,7 @@ export default function HeroSection({
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container mx-auto py-8 md:py-12 lg:py-16 px-8 lg:px-0">
+      <div className="container mx-auto py-8 md:py-12 lg:py-16">
         {/* Desktop Layout: Side by side */}
         <div className="hidden lg:flex lg:items-center lg:gap-8">
           <div className="flex flex-col items-start gap-6 flex-1">

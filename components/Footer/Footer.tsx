@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-black-default w-full">
       <section
-        className="container mx-auto text-center pt-12 px-8 bg-gradient-to-r from-black-default via-transparent to-black-default"
+        className="container mx-auto text-center pt-12 bg-gradient-to-r from-black-default via-transparent to-black-default"
         style={{
           background: "url(/images/footer_sky.png) top center no-repeat",
           backgroundSize: "cover",
@@ -43,8 +43,8 @@ export default function Footer() {
           className="mx-auto -mb-16"
         />
       </section>
-      <section
-        className="text-center pt-24 px-8 pb-6"
+        <section
+        className="text-center pt-24 pb-6"
         style={{
           background: "url(/images/footer_floor.png) center bottom repeat",
           backgroundSize: "cover",
@@ -55,7 +55,7 @@ export default function Footer() {
         </Typography>
         <div
           id="footer_awards"
-          className="container mx-auto grid grid-cols-2 tablet:grid-cols-3 desktop:grid-cols-6 gap-4 place-items-center pt-6"
+          className="container mx-auto grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-4 place-items-center pt-6"
         >
           <Image
             src="/award_logos/deloitte_fast_500_2018.svg"
@@ -95,8 +95,8 @@ export default function Footer() {
           />
         </div>
       </section>
-      <section className="bg-black-default container mx-auto flex flex-col tablet:flex-row py-8 px-8">
-        <div className="flex flex-col w-full tablet:w-1/3 gap-y-8 pr-18">
+      <section className="bg-black-default container mx-auto flex flex-col sm:flex-row py-8">
+        <div className="flex flex-col w-full sm:w-1/3 gap-y-8 pr-18">
           <div>
             <Typography variant="h5" color="text-white">
               <span className="uppercase">Find us on</span>
@@ -181,7 +181,7 @@ export default function Footer() {
             </Typography>
           </div>
         </div>
-        <div className="grid sm:w-full tablet:w-2/3 grid-cols-1 tablet:grid-cols-3 laptop:grid-cols-4 gap-y-8 gap-x-16">
+        <div className="grid w-full sm:w-2/3 grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-16">
           <div>
             <Typography variant="h4" color="text-white">
               Learn
@@ -352,8 +352,8 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="bg-white text-left px-8 py-4 hover:bg-[#ee3e81] hover:text-white transition-colors duration-300 group">
-        <div className="container mx-auto flex flex-col tablet:flex-row items-center gap-6">
+      <section className="bg-white text-left py-4 hover:bg-[#ee3e81] hover:text-white transition-colors duration-300 group">
+        <div className="container mx-auto flex flex-col sm:flex-row items-center gap-6">
           <Image
             src="/images/starship.png"
             width={110} // Set the actual width of the image
@@ -373,7 +373,7 @@ export default function Footer() {
           </Typography>
         </div>
       </section>
-      <section className="container mx-auto px-8 py-12 space-y-6">
+      <section className="container mx-auto py-12 space-y-6">
         <Typography variant="body" color="text-white">
         BlackBull Markets and its associated entities have access to provide over 26000 tradable instruments to clients across all our Trading Platforms.
         </Typography>

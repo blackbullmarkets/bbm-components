@@ -73,8 +73,8 @@ export default function MainMenu({
     <>
       <header className="fixed z-50 shadow-xl w-full bg-white top-0 left-0">
         {/* Top Bar - Hidden on mobile/tablet */}
-        <div className="bg-primary-default hidden laptop:block">
-          <div className="container mx-auto px-6 py-2 flex justify-between">
+        <div className="bg-primary-default hidden lg:block">
+          <div className="container mx-auto py-2 flex justify-between">
             <ul className="flex text-xm text-white/70 font-bold items-center">
               <li className="float-left">
                 <Link
@@ -141,19 +141,19 @@ export default function MainMenu({
         </div>
 
         {/* Main Navigation */}
-        <nav className="container mx-auto flex justify-between items-center px-6 py-6">
+        <nav className="container mx-auto flex justify-between items-center py-6">
           <Link href={homepageUrl} className="flex items-center">
             {logo}
           </Link>
           
           {/* Desktop Menu */}
-          <div className="hidden laptop:block">
+          <div className="hidden lg:block">
             <MainMenuListingComponent parentMenuItems={menuItems} />
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="laptop:hidden flex items-center justify-center w-10 h-10"
+            className="lg:hidden flex items-center justify-center w-10 h-10"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
             aria-expanded={isMobileMenuOpen}
@@ -170,7 +170,7 @@ export default function MainMenu({
       {isMobileMenuOpen && (
         <div 
           id="mobile-menu"
-          className="fixed inset-0 z-[60] bg-white laptop:hidden flex flex-col h-screen"
+          className="fixed inset-0 z-[60] bg-white lg:hidden flex flex-col h-screen"
           role="dialog"
           aria-modal="true"
           aria-labelledby="mobile-menu-title"
@@ -277,7 +277,7 @@ export default function MainMenu({
           {/* Footer Links - Fixed at bottom */}
           <div className="px-6 py-4 border-t border-gray-200 flex-shrink-0">
             <div className="text-center">
-              <span className="text-xs font-bold text-black">
+              <span className="text-xs font-bold text-labelgray">
                 <Link href="https://blackbull.com" className="hover:text-primary-default">
                   Personal
                 </Link>

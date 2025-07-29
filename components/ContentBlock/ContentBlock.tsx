@@ -28,10 +28,10 @@ export default function ContentBlock({
 }: ContentBlockProps) {
   return (
     <section
-      className={`container mx-auto flex flex-col lg:flex-row gap-6 p-8 justify-items-center 
+      className={`container mx-auto flex flex-col lg:flex-row gap-6 justify-items-center 
         ${imagePosition === "left" ? "flex-row" : "flex-row-reverse"}
         ${hasBlockShadow && "shadow-lg"} 
-        ${hasBorder && "border border-4 border-black-25 rounded-xm"}`}
+        ${hasBorder && "border-4 border-black-25 rounded-xm"}`}
     >
       <div className="basis-1/2 flex">
         {!video && (
