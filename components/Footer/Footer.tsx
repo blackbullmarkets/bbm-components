@@ -384,9 +384,6 @@ export default function Footer() {
         BBG Limited (trading name: BlackBull Markets) is limited liability company incorporated and registered under the laws of Seychelles, with company number 857010-1 and a registered address at JUC Building, Office F7B, Providence Zone 18, Mahe, Seychelles. BlackBull Markets’ head office is in Auckland, New Zealand. The Company is authorised and regulated by the Financial Services Authority in Seychelles (“FSA”) under license number SD045 for the provision of the investment services.
         </Typography>
         <Typography variant="body" color="text-white">
-        BlackBull Group UK Limited is registered in the United Kingdom, Company Number – 9556804. Services provided by: BlackBull Group UK Limited (Company Number – 9556804) Address – 24 Ousebank Drive, Skelton, York, YO30 1ZB, England.
-        </Typography>
-        <Typography variant="body" color="text-white">
         Black Bull Trade Limited is a New Zealand limited liability company incorporated and registered under the laws of New Zealand, with NZBN 9429049891041 and registered address Floor 20, 188 Quay Street, Auckland Central, Auckland 1010, New Zealand. Black Bull Trade is registered FSP1002113.
         </Typography>
         <Typography variant="body" color="text-white">
