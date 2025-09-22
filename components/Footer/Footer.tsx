@@ -393,7 +393,7 @@ export default function Footer() {
         BlackBull Markets does not accept client applications from Canada and the United States.
         </Typography>
         <Typography variant="body" color="text-white">
-        This offer of services is also not intended for residents of the European Union, the United Kingdom nor any non-resident of New Zealand.
+        This offer of services is also not intended for residents of the European Union, the United Kingdom, India nor any non-resident of New Zealand.
         </Typography>
         <Typography variant="body" color="text-white">
         The domain blackbull.com is registered under our company, Black Bull Global Limited.
