@@ -1,4 +1,4 @@
-name: Publish Package to GitHub Packages
+name: Publish bbm-components to GitHub Packages
 
 on:
   push:
