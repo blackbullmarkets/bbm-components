@@ -28,7 +28,13 @@ jobs:
 
       - name: Create package lock file        
         run: npm install --package-lock-only
-      
+
+
+      - name: Instalar React 18+ y tipos
+        run: |
+          npm install react@^17.0.0 react-dom@^18.0.0 next
+          npm install --save-dev @types/react@^18.0.0 @types/react-dom@^18.0.0
+          
       - name: Install dependencies
         run: npm ci
 
