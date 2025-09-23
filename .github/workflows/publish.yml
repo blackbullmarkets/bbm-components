@@ -37,7 +37,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-
+      - name: Ensure lockfile (only if absent)
+        if: ${{ hashFiles('package-lock.json') == '' }}
+        run: npm install --package-lock-only --ignore-scripts
+        
       - name: Install dependencies
         run: npm ci
 
